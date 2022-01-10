@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigtaon_graph"
+    app:startDestination="@id/nicefragment1">
+
+    <fragment
+        android:id="@+id/nicefragment1"
+        android:name="com.example.myapplication.Fragments.nicefragment1"
+        android:label="nicefragment1" >
+
+        <action
+            android:id="@+id/action_nicefragment1_to_nicefragment2"
+            app:destination="@id/nicefragment2" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nicefragment2"
+        android:name="com.example.myapplication.Fragments.nicefragment2"
+        android:label="nicefragment2"
+        tools:layout="@layout/nicefragment2"/>
+
+    <argument
+        android:name="second"
+        app:argType="Integer"
+        android:defaultValue="-1"/>
+
+    <fragment
+        android:id="@+id/nicefragment3"
+        android:name="com.example.myapplication.Fragments.nicefragment3"
+        android:label="nicefragment3" />
+    <fragment
+        android:id="@+id/nicefragment4"
+        android:name="com.example.myapplication.Fragments.nicefragment4"
+        android:label="nicefragment4" />
+</navigation>
